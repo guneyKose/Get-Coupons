@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class ViewController: UIViewController {
     
@@ -54,7 +55,27 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: K.segue, sender: couponButton)
         couponButton.alpha = 0
         couponError.alpha = 1
+        notification()
         }
+    func notification() {
+        let center = UNUserNotificationCenter.current()
+        
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+            //if didnt allowed granted
+        }
+        let content = UNMutableNotificationContent()
+        content.title = "you have a message from guney!"
+        content.body = "naber lan"
+        content.sound = UNNotificationSound.default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 20, repeats: false)
+        let uuidString = UUID().uuidString
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+        center.add(request) { (error) in
+            
+        }
+    }
+    
     func updateUI() {
         guneyLabel.alpha = 1
         wishTextField.alpha = 1
