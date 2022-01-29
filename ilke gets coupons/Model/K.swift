@@ -11,4 +11,5 @@ struct K {
     static let coupons = ["güney beni yurda bırak kuponu","güney bana sarılsın kuponu", "bonus", "güneyden bir kahve kuponu", "yemek güney'den kuponu", "güney bana bira alsın kuponu", "güney'den bir öpücük kuponu", "güney ile kadıköy turu kuponu", "güney karşıya geçsin kuponu","1 saat sülo terapisi kazandınız.", "güney ödevimi yapsın ben yatayım kuponu", "güney ile martı motor turu", "güney çay ısmarlasın kuponu","guney beni metrobüse bırak kuponu","guney ile kedi sevme kuponu","guney beni havuza götür kuponu"]
 
     static let segue = "couponSegue"
+    static let wishLeft = "no wishes left. but you can take a coupon."
 }

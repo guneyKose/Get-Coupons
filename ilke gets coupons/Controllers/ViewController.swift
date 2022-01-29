@@ -7,38 +7,39 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController {
+    
+    let defaults = UserDefaults.standard
+    var wishesCameTrue = 0
+    var kiviAlpha = 0.85
+    var charIndex = 0.0
+    let titleText = K.appName
     
     @IBOutlet weak var wishTextField: UITextField!
     @IBOutlet weak var responseLabel: UILabel!
     @IBOutlet weak var wishNumber: UILabel!
     @IBOutlet weak var couponButton: UIButton!
-    @IBOutlet weak var kivi: UIImageView!
     @IBOutlet weak var couponError: UILabel!
     @IBOutlet weak var wishThatCameTrue: UILabel!
     @IBOutlet weak var wishThatCameTrue2: UILabel!
     @IBOutlet weak var wishThatCameTrue3: UILabel!
     @IBOutlet weak var guneyLabel: UILabel!
     @IBOutlet weak var ilkeWishes: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         wishTextField.delegate = self
         responseLabel.text = ""
         wishNumber.text = ""
-        kivi.alpha = kiviAlpha
         couponError.alpha = 0
         wishThatCameTrue.text = ""
         wishThatCameTrue2.text = ""
         wishThatCameTrue3.text = ""
         guneyLabel.alpha = 0
         wishTextField.alpha = 0
-        kivi.alpha = 0
         couponButton.alpha = 0
         
-        var charIndex = 0.0
-        let titleText = K.appName
         for letter in titleText {
             Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { timer in
                 self.ilkeWishes.text?.append(letter)
@@ -49,34 +50,32 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
-    
+    @IBAction func couponButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: K.segue, sender: couponButton)
+        couponButton.alpha = 0
+        couponError.alpha = 1
+        }
     func updateUI() {
         guneyLabel.alpha = 1
         wishTextField.alpha = 1
-        kivi.alpha = 1
         couponButton.alpha = 1
         ilkeWishes.alpha = 0
     }
-    
-    var wishesCameTrue = 0
-    var kiviAlpha = 0.85
+}
+//MARK: - UITextFieldDelegate
 
+extension ViewController : UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         wishTextField.endEditing(true)
         return true
     }
-    
     func textFieldDidEndEditing(_ textField: UITextField) {
-        
         wishNumber.text = "wishes came true : \(wishesCameTrue)"
-        
         if wishTextField.hasText {
             responseLabel.text = K.responses.randomElement()
-            
         }else{
             responseLabel.text = "type something!"
         }
-        
         if wishesCameTrue + 1 <= 3 && responseLabel.text == K.positiveResponses[0] || responseLabel.text == K.positiveResponses[1]   {
             
             wishesCameTrue += 1
@@ -98,9 +97,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         if wishesCameTrue >= 3 {
             wishesCameTrue = 3
-            responseLabel.text = "no wishes left. but you can take a coupon."
+            responseLabel.text = K.wishLeft
         }
-        if responseLabel.text == "no wishes left. but you can take a coupon." {
+        if responseLabel.text == K.wishLeft {
             wishesCameTrue = 3
         }
         if responseLabel.text == "al sana bi kupon" {
@@ -108,12 +107,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         wishTextField.text = ""
     }
-    @IBAction func couponButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: K.segue, sender: couponButton)
-        couponButton.alpha = 0
-        couponError.alpha = 1
-    }
 }
+
 
 
 

@@ -15,6 +15,7 @@
 		30203F5A2773BD700083A95C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30203F592773BD700083A95C /* Assets.xcassets */; };
 		30203F5D2773BD700083A95C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30203F5B2773BD700083A95C /* LaunchScreen.storyboard */; };
 		30D1A953277497F300642F7B /* CouponVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1A952277497F300642F7B /* CouponVC.swift */; };
+		30F28FC127A5F0EC00900477 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F28FC027A5F0EC00900477 /* NotificationCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		30203F5C2773BD700083A95C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30203F5E2773BD700083A95C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30D1A952277497F300642F7B /* CouponVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponVC.swift; sourceTree = "<group>"; };
+		30F28FC027A5F0EC00900477 /* NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				30107045278476710096AAC0 /* K.swift */,
+				30F28FC027A5F0EC00900477 /* NotificationCenter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30107046278476710096AAC0 /* K.swift in Sources */,
+				30F28FC127A5F0EC00900477 /* NotificationCenter.swift in Sources */,
 				30203F552773BD6E0083A95C /* ViewController.swift in Sources */,
 				30203F512773BD6E0083A95C /* AppDelegate.swift in Sources */,
 				30D1A953277497F300642F7B /* CouponVC.swift in Sources */,
