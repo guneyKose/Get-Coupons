@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30107046278476710096AAC0 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30107045278476710096AAC0 /* Responses.swift */; };
+		30107046278476710096AAC0 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30107045278476710096AAC0 /* K.swift */; };
 		30203F512773BD6E0083A95C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30203F502773BD6E0083A95C /* AppDelegate.swift */; };
 		30203F532773BD6E0083A95C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30203F522773BD6E0083A95C /* SceneDelegate.swift */; };
 		30203F552773BD6E0083A95C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30203F542773BD6E0083A95C /* ViewController.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		30107045278476710096AAC0 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		30107045278476710096AAC0 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		30203F4D2773BD6E0083A95C /* ilke gets coupons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ilke gets coupons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30203F502773BD6E0083A95C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30203F522773BD6E0083A95C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		30107044278476400096AAC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				30107045278476710096AAC0 /* Responses.swift */,
+				30107045278476710096AAC0 /* K.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30107046278476710096AAC0 /* Responses.swift in Sources */,
+				30107046278476710096AAC0 /* K.swift in Sources */,
 				30203F552773BD6E0083A95C /* ViewController.swift in Sources */,
 				30203F512773BD6E0083A95C /* AppDelegate.swift in Sources */,
 				30D1A953277497F300642F7B /* CouponVC.swift in Sources */,

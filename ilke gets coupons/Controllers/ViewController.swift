@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         couponButton.alpha = 0
         
         var charIndex = 0.0
-        let titleText = Responses.appName
+        let titleText = K.appName
         for letter in titleText {
             Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { timer in
                 self.ilkeWishes.text?.append(letter)
@@ -71,13 +71,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         wishNumber.text = "wishes came true : \(wishesCameTrue)"
         
         if wishTextField.hasText {
-            responseLabel.text = Responses.responses.randomElement()
+            responseLabel.text = K.responses.randomElement()
             
         }else{
             responseLabel.text = "type something!"
         }
         
-        if wishesCameTrue + 1 <= 3 && responseLabel.text == Responses.positiveResponses[0] || responseLabel.text == Responses.positiveResponses[1]   {
+        if wishesCameTrue + 1 <= 3 && responseLabel.text == K.positiveResponses[0] || responseLabel.text == K.positiveResponses[1]   {
             
             wishesCameTrue += 1
             let wish = wishTextField.text!
@@ -104,12 +104,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
             wishesCameTrue = 3
         }
         if responseLabel.text == "al sana bi kupon" {
-            performSegue(withIdentifier: Responses.segue, sender: couponButton)
+            performSegue(withIdentifier: K.segue, sender: couponButton)
         }
         wishTextField.text = ""
     }
     @IBAction func couponButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: Responses.segue, sender: couponButton)
+        performSegue(withIdentifier: K.segue, sender: couponButton)
         couponButton.alpha = 0
         couponError.alpha = 1
     }

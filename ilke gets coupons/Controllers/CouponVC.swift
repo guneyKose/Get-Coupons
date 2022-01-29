@@ -14,12 +14,12 @@ class CouponVC: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     
     let date = String(DateFormatter.localizedString(from: Date(), dateStyle: .medium, timeStyle: .short))
-    let coupon = Responses.coupons
+    let coupon = K.coupons
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        couponName.text = Responses.coupons.randomElement()
+        couponName.text = K.coupons.randomElement()
         dateLabel.text = date
     
         switch couponName.text {
