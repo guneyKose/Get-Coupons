@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "sarılma kuponu.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

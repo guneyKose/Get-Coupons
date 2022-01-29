@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ilke_gets_coupons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="MTK-nt-M44">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="kivi 2" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-3R-mB5">
+                                <rect key="frame" x="-196.5" y="104" width="768" height="1024"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="what do you want from güney?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTn-9u-gVg">
+                                <rect key="frame" x="90" y="20" width="269" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="colorSet1"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="response of the wishes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2P-Zf-KR2">
+                                <rect key="frame" x="14" y="105" width="347" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="colorSet1"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wishes came true : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZ8-9v-6CR">
+                                <rect key="frame" x="194.5" y="134" width="166.5" height="22.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="colorSet1"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9y-0u-cFl">
+                                <rect key="frame" x="127.5" y="531" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="ae6-rp-UKf"/>
+                                    <constraint firstAttribute="height" constant="120" id="eaq-GD-2Aw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="get a coupon" image="kuponButton"/>
+                                <connections>
+                                    <action selector="couponButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5v-G5-uJs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you only get a coupon once a week!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXw-CG-JoU">
+                                <rect key="frame" x="51" y="621" width="273" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.65738298760000002" green="1" blue="0.63901476239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wish that came true" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="RaO-MD-0gO">
+                                <rect key="frame" x="108" y="322.5" width="159.5" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="colorSet1"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wish that came true 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000596046448" translatesAutoresizingMaskIntoConstraints="NO" id="jP0-e4-exh">
+                                <rect key="frame" x="100.5" y="406.5" width="174.5" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="colorSet1"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wish that came true 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="FmC-4p-PPp">
+                                <rect key="frame" x="100.5" y="364.5" width="174" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="colorSet1"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type your wishes" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m32-B6-AX8">
+                                <rect key="frame" x="14" y="60" width="347" height="34"/>
+                                <color key="backgroundColor" name="colorSet1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="alert" returnKeyType="send" smartQuotesType="yes"/>
+                                <connections>
+                                    <action selector="wishTextFieldTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="seT-Pf-z2t"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emA-8J-eVD">
+                                <rect key="frame" x="187.5" y="333.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="colorSet1"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="RaO-MD-0gO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Yg-DQ-BfR"/>
+                            <constraint firstItem="MTK-nt-M44" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="2HL-ov-idS"/>
+                            <constraint firstItem="jP0-e4-exh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3hv-G4-vni"/>
+                            <constraint firstItem="rTn-9u-gVg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7jK-9W-XPG"/>
+                            <constraint firstItem="m32-B6-AX8" firstAttribute="top" secondItem="rTn-9u-gVg" secondAttribute="top" constant="40" id="8V4-FX-uvi"/>
+                            <constraint firstAttribute="bottom" secondItem="hvb-3R-mB5" secondAttribute="bottom" constant="-461" id="8oJ-cX-cXi"/>
+                            <constraint firstItem="RaO-MD-0gO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AAZ-zf-NLn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W2P-Zf-KR2" secondAttribute="trailing" constant="14" id="DKH-dE-xlo"/>
+                            <constraint firstItem="MTK-nt-M44" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="E15-xN-L41"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m32-B6-AX8" secondAttribute="trailing" constant="14" id="GFZ-1Y-Jhf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OXw-CG-JoU" secondAttribute="bottom" constant="25" id="GUt-JW-7vy"/>
+                            <constraint firstItem="FmC-4p-PPp" firstAttribute="top" secondItem="RaO-MD-0gO" secondAttribute="bottom" constant="20" id="Gqb-bF-tG4"/>
+                            <constraint firstItem="W2P-Zf-KR2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="M2U-S7-MMN"/>
+                            <constraint firstItem="m32-B6-AX8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M7x-vP-GYX"/>
+                            <constraint firstItem="MTK-nt-M44" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MWU-AG-mu1"/>
+                            <constraint firstItem="OXw-CG-JoU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mf1-cj-hqn"/>
+                            <constraint firstItem="jP0-e4-exh" firstAttribute="top" secondItem="FmC-4p-PPp" secondAttribute="bottom" constant="20" id="O0o-B8-fAc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p9y-0u-cFl" secondAttribute="bottom" constant="16" id="U3p-0T-EGq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qZ8-9v-6CR" secondAttribute="trailing" constant="14" id="dUh-XN-y3l"/>
+                            <constraint firstItem="p9y-0u-cFl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dYK-9c-pUq"/>
+                            <constraint firstItem="W2P-Zf-KR2" firstAttribute="top" secondItem="rTn-9u-gVg" secondAttribute="bottom" constant="60" id="fvn-d0-bep"/>
+                            <constraint firstItem="FmC-4p-PPp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kDF-6h-Hkq"/>
+                            <constraint firstItem="emA-8J-eVD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lTi-5l-MFR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rTn-9u-gVg" secondAttribute="trailing" constant="16" id="laB-EL-Cw4"/>
+                            <constraint firstItem="hvb-3R-mB5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="niD-zj-UBy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W2P-Zf-KR2" secondAttribute="trailing" constant="14" id="njn-gb-nPs"/>
+                            <constraint firstItem="emA-8J-eVD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pws-zv-HWK"/>
+                            <constraint firstItem="qZ8-9v-6CR" firstAttribute="top" secondItem="m32-B6-AX8" secondAttribute="bottom" constant="40" id="t9H-dL-U8q"/>
+                            <constraint firstItem="MTK-nt-M44" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vdL-tl-Fx8"/>
+                            <constraint firstItem="m32-B6-AX8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="zog-aV-mH8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3ml-Z3-YeV"/>
+                    <connections>
+                        <outlet property="couponButton" destination="p9y-0u-cFl" id="iPj-sr-rtV"/>
+                        <outlet property="couponError" destination="OXw-CG-JoU" id="pJJ-fU-GcY"/>
+                        <outlet property="guneyLabel" destination="rTn-9u-gVg" id="Hhr-Q9-yQ9"/>
+                        <outlet property="ilkeWishes" destination="emA-8J-eVD" id="DRw-dd-u5G"/>
+                        <outlet property="kivi" destination="hvb-3R-mB5" id="cuO-IL-LQD"/>
+                        <outlet property="responseLabel" destination="W2P-Zf-KR2" id="9dx-YY-ZB6"/>
+                        <outlet property="wishNumber" destination="qZ8-9v-6CR" id="miW-TX-KCK"/>
+                        <outlet property="wishTextField" destination="m32-B6-AX8" id="0TM-42-eyu"/>
+                        <outlet property="wishThatCameTrue" destination="RaO-MD-0gO" id="FEX-Ls-7Ll"/>
+                        <outlet property="wishThatCameTrue2" destination="FmC-4p-PPp" id="5kK-ou-f8G"/>
+                        <outlet property="wishThatCameTrue3" destination="jP0-e4-exh" id="v1r-ZI-oFE"/>
+                        <segue destination="tPo-0v-9tx" kind="show" identifier="couponSegue" id="ZKa-MQ-fTp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1212" y="62.518740629685162"/>
+        </scene>
+        <!--Back-->
+        <scene sceneID="McU-Bc-8rS">
+            <objects>
+                <viewController id="tPo-0v-9tx" customClass="CouponVC" customModule="ilke_gets_coupons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f9d-cp-MiF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cJ3-Nh-Ac4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adsız tasarım" translatesAutoresizingMaskIntoConstraints="NO" id="JqB-Kw-ovL">
+                                <rect key="frame" x="42.5" y="178.5" width="290" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="0yo-Yw-00a"/>
+                                    <constraint firstAttribute="width" constant="290" id="JDZ-1l-3c9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fwg-wr-nr9">
+                                <rect key="frame" x="57.5" y="193.5" width="260" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="MGt-AN-ViG"/>
+                                    <constraint firstAttribute="width" constant="260" id="eer-6v-caO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coupon name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rjb-Kp-Oha">
+                                <rect key="frame" x="16" y="151.5" width="343" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="colorSet1"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date and time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9hZ-iV-QB0">
+                                <rect key="frame" x="16" y="470.5" width="343" height="24"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" name="colorSet1"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1C-Rd-ZJu">
+                                <rect key="frame" x="127.5" y="507" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="mjG-4f-AiP"/>
+                                    <constraint firstAttribute="height" constant="120" id="oMi-ZW-kvJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="get a coupon" image="kuponButton"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="tPo-0v-9tx" eventType="touchUpInside" id="IXo-XR-MdR"/>
+                                    <action selector="couponButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YaK-jm-Jhx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ujj-kt-7cr"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="cJ3-Nh-Ac4" firstAttribute="bottom" secondItem="f9d-cp-MiF" secondAttribute="bottom" id="2M2-pI-Zlu"/>
+                            <constraint firstItem="cJ3-Nh-Ac4" firstAttribute="top" secondItem="f9d-cp-MiF" secondAttribute="top" id="2Pf-kQ-bvs"/>
+                            <constraint firstItem="Ujj-kt-7cr" firstAttribute="bottom" secondItem="v1C-Rd-ZJu" secondAttribute="bottom" constant="20" id="2Xp-eY-Og3"/>
+                            <constraint firstItem="9hZ-iV-QB0" firstAttribute="top" secondItem="JqB-Kw-ovL" secondAttribute="bottom" constant="2" id="3sM-tv-YLL"/>
+                            <constraint firstItem="fwg-wr-nr9" firstAttribute="centerY" secondItem="f9d-cp-MiF" secondAttribute="centerY" id="8jJ-iY-cOS"/>
+                            <constraint firstItem="9hZ-iV-QB0" firstAttribute="centerX" secondItem="f9d-cp-MiF" secondAttribute="centerX" id="IsU-jY-99w"/>
+                            <constraint firstItem="rjb-Kp-Oha" firstAttribute="centerX" secondItem="f9d-cp-MiF" secondAttribute="centerX" id="Khd-My-0fq"/>
+                            <constraint firstItem="Ujj-kt-7cr" firstAttribute="trailing" secondItem="rjb-Kp-Oha" secondAttribute="trailing" constant="16" id="Oye-It-GKA"/>
+                            <constraint firstItem="JqB-Kw-ovL" firstAttribute="centerY" secondItem="f9d-cp-MiF" secondAttribute="centerY" id="PTz-IC-oAS"/>
+                            <constraint firstItem="fwg-wr-nr9" firstAttribute="centerX" secondItem="f9d-cp-MiF" secondAttribute="centerX" id="QCW-VZ-St2"/>
+                            <constraint firstItem="Ujj-kt-7cr" firstAttribute="trailing" secondItem="9hZ-iV-QB0" secondAttribute="trailing" constant="16" id="Uy7-d2-DxW"/>
+                            <constraint firstItem="9hZ-iV-QB0" firstAttribute="leading" secondItem="Ujj-kt-7cr" secondAttribute="leading" constant="16" id="ZOT-iA-DSY"/>
+                            <constraint firstItem="cJ3-Nh-Ac4" firstAttribute="leading" secondItem="f9d-cp-MiF" secondAttribute="leading" id="cYV-BP-s5u"/>
+                            <constraint firstItem="v1C-Rd-ZJu" firstAttribute="centerX" secondItem="f9d-cp-MiF" secondAttribute="centerX" id="czG-p6-vQ4"/>
+                            <constraint firstItem="JqB-Kw-ovL" firstAttribute="top" secondItem="rjb-Kp-Oha" secondAttribute="bottom" constant="2" id="osf-yO-H25"/>
+                            <constraint firstItem="cJ3-Nh-Ac4" firstAttribute="trailing" secondItem="f9d-cp-MiF" secondAttribute="trailing" id="sYM-T7-hCl"/>
+                            <constraint firstItem="JqB-Kw-ovL" firstAttribute="centerX" secondItem="f9d-cp-MiF" secondAttribute="centerX" id="uAp-UX-ewj"/>
+                            <constraint firstItem="rjb-Kp-Oha" firstAttribute="leading" secondItem="Ujj-kt-7cr" secondAttribute="leading" constant="16" id="vK7-Gp-0Qa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Back" id="tge-Dz-GwR"/>
+                    <connections>
+                        <outlet property="couponImage" destination="fwg-wr-nr9" id="y6C-YS-MnL"/>
+                        <outlet property="couponName" destination="rjb-Kp-Oha" id="xXk-oY-XTp"/>
+                        <outlet property="dateLabel" destination="9hZ-iV-QB0" id="VqN-EP-FdY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecV-tt-9bp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="62.518740629685162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Adsız tasarım" width="500" height="500"/>
+        <image name="background" width="492" height="635"/>
+        <image name="kivi 2" width="768" height="1024"/>
+        <image name="kuponButton" width="500" height="500"/>
+        <namedColor name="colorSet1">
+            <color red="0.57599997520446777" green="1" blue="0.57999998331069946" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

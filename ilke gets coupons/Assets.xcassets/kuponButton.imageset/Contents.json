@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "filename" : "kuponButton.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "auto-scaling" : "auto",
+    "compression-type" : "automatic",
+    "localizable" : true,
+    "template-rendering-intent" : "original"
+  }
+}

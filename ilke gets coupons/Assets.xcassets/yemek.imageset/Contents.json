@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "yemek.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
