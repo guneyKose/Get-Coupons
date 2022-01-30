@@ -12,4 +12,9 @@ struct K {
 
     static let segue = "couponSegue"
     static let wishLeft = "no wishes left. but you can take a coupon."
+    static let notifications = [
+        Notifications(t: "you have a message from guney!", b: "how you doin?"),
+        Notifications(t: "bırak artık telefonu", b: "git biraz ui/ux çalış aq!"),
+        Notifications(t: "guney iyi günler diler!", b: "dikkat et!"),
+        Notifications(t: "guney is watching you...", b: "be careful")]
 }

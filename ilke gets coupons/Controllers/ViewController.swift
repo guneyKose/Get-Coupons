@@ -65,10 +65,10 @@ class ViewController: UIViewController {
         }
         let content = UNMutableNotificationContent()
         content.title = "you have a message from guney!"
-        content.body = "naber lan"
+        content.body = "deneme🥝"
         content.sound = UNNotificationSound.default
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 20, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
         let uuidString = UUID().uuidString
         let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
         center.add(request) { (error) in
