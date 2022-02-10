@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var kiviAlpha = 0.85
     var charIndex = 0.0
     let titleText = K.appName
+    let date = Double(Date().timeIntervalSince1970)
     
     @IBOutlet weak var wishTextField: UITextField!
     @IBOutlet weak var responseLabel: UILabel!
@@ -53,10 +54,11 @@ class ViewController: UIViewController {
     }
     @IBAction func couponButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: K.segue, sender: couponButton)
-        couponButton.alpha = 0
-        couponError.alpha = 1
+        getTheTime()
         notification()
+        updateUI()
         }
+    //MARK: - Notifications
     func notification() {
         let center = UNUserNotificationCenter.current()
         
@@ -75,12 +77,24 @@ class ViewController: UIViewController {
             
         }
     }
-    
+    //MARK: - UpdateUI
     func updateUI() {
-        guneyLabel.alpha = 1
-        wishTextField.alpha = 1
-        couponButton.alpha = 1
-        ilkeWishes.alpha = 0
+        if date - defaults.double(forKey: "time") >= 24*60*60*7  {
+            guneyLabel.alpha = 1
+            wishTextField.alpha = 1
+            couponButton.alpha = 1
+            ilkeWishes.alpha = 0
+        } else {
+            guneyLabel.alpha = 1
+            wishTextField.alpha = 1
+            ilkeWishes.alpha = 0
+            couponButton.alpha = 0
+            couponError.alpha = 1
+        }
+    }
+    func getTheTime() {
+        let time = Double(Date().timeIntervalSince1970)
+        defaults.set(time, forKey: "time")
     }
 }
 //MARK: - UITextFieldDelegate
