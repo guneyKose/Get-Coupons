@@ -66,11 +66,11 @@ class ViewController: UIViewController {
             //if didnt allowed granted
         }
         let content = UNMutableNotificationContent()
-        content.title = "you have a message from guney!"
-        content.body = "deneme🥝"
+        content.title = K.notifications.randomElement()!.title
+        content.body = K.notifications.randomElement()!.body
         content.sound = UNNotificationSound.default
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 24*3600, repeats: true)
         let uuidString = UUID().uuidString
         let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
         center.add(request) { (error) in
@@ -79,7 +79,7 @@ class ViewController: UIViewController {
     }
     //MARK: - UpdateUI
     func updateUI() {
-        if date - defaults.double(forKey: "time") >= 24*60*60*7  {
+        if date - defaults.double(forKey: "time") >= 24*60*60 {
             guneyLabel.alpha = 1
             wishTextField.alpha = 1
             couponButton.alpha = 1
