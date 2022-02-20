@@ -9,14 +9,6 @@ import UIKit
 import UserNotifications
 
 class ViewController: UIViewController {
-    
-    let defaults = UserDefaults.standard
-    var wishesCameTrue = 0
-    var kiviAlpha = 0.85
-    var charIndex = 0.0
-    let titleText = K.appName
-    let date = Double(Date().timeIntervalSince1970)
-    
     @IBOutlet weak var wishTextField: UITextField!
     @IBOutlet weak var responseLabel: UILabel!
     @IBOutlet weak var wishNumber: UILabel!
@@ -28,6 +20,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var guneyLabel: UILabel!
     @IBOutlet weak var ilkeWishes: UILabel!
     
+    let defaults = UserDefaults.standard
+    var wishesCameTrue = 0
+    var kiviAlpha = 0.85
+    var charIndex = 0.0
+    let titleText = K.appName
+    let date = Double(Date().timeIntervalSince1970)
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
