@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     var charIndex = 0.0
     let titleText = K.appName
     let date = Double(Date().timeIntervalSince1970)
+    let timeInterval: TimeInterval = 24*3600
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,9 +55,9 @@ class ViewController: UIViewController {
     @IBAction func couponButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: K.segue, sender: couponButton)
         getTheTime()
-        notification()
         updateUI()
-        }
+        notification()
+    }
     //MARK: - Notifications
     func notification() {
         let center = UNUserNotificationCenter.current()
@@ -69,7 +70,7 @@ class ViewController: UIViewController {
         content.body = K.notifications.randomElement()!.body
         content.sound = UNNotificationSound.default
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 24*3600, repeats: true)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: false)
         let uuidString = UUID().uuidString
         let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
         center.add(request) { (error) in
@@ -105,11 +106,8 @@ extension ViewController : UITextFieldDelegate {
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         wishNumber.text = "wishes came true : \(wishesCameTrue)"
-        if wishTextField.hasText {
-            responseLabel.text = K.responses.randomElement()
-        }else{
-            responseLabel.text = "type something!"
-        }
+        responseLabel.text = wishTextField.hasText ? K.responses.randomElement() : "type something!"
+        
         if wishesCameTrue + 1 <= 3 && responseLabel.text == K.positiveResponses[0] || responseLabel.text == K.positiveResponses[1]   {
             
             wishesCameTrue += 1
